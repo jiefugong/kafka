@@ -16,20 +16,12 @@
  */
 package kafka.examples;
 
-public class KafkaConsumerProducerDemo implements KafkaProperties
-{
-  public static void main(String[] args)
-  {
-    final boolean isAsync = args.length > 0 ? !args[0].trim().toLowerCase().equals("sync") : true;
-    final String groupID = args.length > 1 ? args[1] : "testGroup";
+public class ConsumeFromTopic {
+	public static void main(String[] args) {
+		String topic = args.length > 0 ? args[0] : "test";
+		String consumerGroup = args.length > 0 ? args[1] : "testGroup";
 
-    AlternateConsumer consumerThread = new AlternateConsumer("multiplepartitions", "testGroup1");
-    consumerThread.start();
-
-    AlternateConsumer otherConsumerThread = new AlternateConsumer("multiplepartitions", "testGroup1");
-    otherConsumerThread.start();
-
-    Producer producerThread = new Producer("multiplepartitions", isAsync);
-    producerThread.start();
-  }
+		AlternateConsumer consumerThread = new AlternateConsumer(topic, consumerGroup);
+		consumerThread.start();
+	}
 }

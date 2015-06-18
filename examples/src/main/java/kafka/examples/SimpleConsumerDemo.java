@@ -43,11 +43,12 @@ public class SimpleConsumerDemo {
 
   private static void generateData() {
     Producer producer2 = new Producer(KafkaProperties.topic2, false);
+    // Producer producer2 = new Producer(KafkaProperties.topic4, false);
     producer2.start();
     Producer producer3 = new Producer(KafkaProperties.topic3, false);
     producer3.start();
     try {
-      Thread.sleep(1000);
+      Thread.sleep(1000); // To let the messages finish sending so the buffer has time to send to Kafka server?
     } catch (InterruptedException e) {
       e.printStackTrace();
     }

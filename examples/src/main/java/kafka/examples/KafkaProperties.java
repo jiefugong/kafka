@@ -18,6 +18,7 @@ package kafka.examples;
 
 public interface KafkaProperties
 {
+  // 2181 is the client port for Zookeeper, looks like 127.0.0.1 is some sort of default for zookeeper
   final static String zkConnect = "127.0.0.1:2181";
   final static  String groupId = "group1";
   final static String topic = "topic1";
@@ -28,5 +29,6 @@ public interface KafkaProperties
   final static int reconnectInterval = 10000;
   final static String topic2 = "topic2";
   final static String topic3 = "topic3";
+  final static String topic4 = "topic4";
   final static String clientId = "SimpleConsumerDemoClient";
 }

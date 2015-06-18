@@ -45,15 +45,16 @@ public class Producer extends Thread
 
   public void run() {
     int messageNo = 1;
-    while(true)
+    int execNum = 0;
+    while(execNum < 100)
     {
       String messageStr = "Message_" + messageNo;
       long startTime = System.currentTimeMillis();
-      if (isAsync) { // Send asynchronously
+      if (isAsync) {
         producer.send(new ProducerRecord<Integer, String>(topic,
             messageNo,
             messageStr), new DemoCallBack(startTime, messageNo, messageStr));
-      } else { // Send synchronously
+      } else {
         try {
           producer.send(new ProducerRecord<Integer, String>(topic,
               messageNo,
@@ -66,6 +67,7 @@ public class Producer extends Thread
         }
       }
       ++messageNo;
+      ++execNum;
     }
   }
 }

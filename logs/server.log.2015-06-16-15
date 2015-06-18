@@ -1,0 +1,6 @@
+[2015-06-16 15:01:27,311] INFO [Offset Manager on Broker 0]: Removed 2 expired offsets in 1 milliseconds. (kafka.server.OffsetManager)
+[2015-06-16 15:11:27,310] INFO [Offset Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.server.OffsetManager)
+[2015-06-16 15:21:27,310] INFO [Offset Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.server.OffsetManager)
+[2015-06-16 15:31:27,310] INFO [Offset Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.server.OffsetManager)
+[2015-06-16 15:41:27,309] INFO [Offset Manager on Broker 0]: Removed 1 expired offsets in 0 milliseconds. (kafka.server.OffsetManager)
+[2015-06-16 15:51:27,309] INFO [Offset Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.server.OffsetManager)

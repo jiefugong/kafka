@@ -1,0 +1,33 @@
+Java HotSpot(TM) 64-Bit Server VM (24.79-b02) for bsd-amd64 JRE (1.7.0_79-b15), built on Apr 10 2015 11:35:04 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Memory: 4k page, physical 16777216k(4194304k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:+CMSClassUnloadingEnabled -XX:+CMSScavengeBeforeRemark -XX:+DisableExplicitGC -XX:InitialHeapSize=1073741824 -XX:+ManagementServer -XX:MaxHeapSize=1073741824 -XX:MaxNewSize=357916672 -XX:MaxTenuringThreshold=6 -XX:NewSize=357916672 -XX:OldPLABSize=16 -XX:OldSize=715825152 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:+UseParNewGC 
+2015-06-17T13:27:38.419+0800: 2.312: [GC2015-06-17T13:27:38.419+0800: 2.312: [ParNew: 279616K->9491K(314560K), 0.0124810 secs] 279616K->9491K(1013632K), 0.0125640 secs] [Times: user=0.05 sys=0.01, real=0.02 secs] 
+2015-06-17T13:27:38.970+0800: 2.863: [GC2015-06-17T13:27:38.970+0800: 2.863: [ParNew: 289107K->34944K(314560K), 0.0211280 secs] 289107K->46696K(1013632K), 0.0212010 secs] [Times: user=0.06 sys=0.07, real=0.02 secs] 
+2015-06-17T13:27:38.991+0800: 2.884: [GC [1 CMS-initial-mark: 11752K(699072K)] 53394K(1013632K), 0.0037910 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-17T13:27:38.995+0800: 2.888: [CMS-concurrent-mark-start]
+2015-06-17T13:27:39.013+0800: 2.905: [CMS-concurrent-mark: 0.011/0.017 secs] [Times: user=0.07 sys=0.00, real=0.02 secs] 
+2015-06-17T13:27:39.013+0800: 2.905: [CMS-concurrent-preclean-start]
+2015-06-17T13:27:39.014+0800: 2.907: [CMS-concurrent-preclean: 0.002/0.002 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-17T13:27:39.014+0800: 2.907: [CMS-concurrent-abortable-preclean-start]
+2015-06-17T13:27:39.411+0800: 3.304: [GC2015-06-17T13:27:39.411+0800: 3.304: [ParNew: 310058K->28611K(314560K), 0.0203050 secs] 321811K->43454K(1013632K), 0.0203910 secs] [Times: user=0.08 sys=0.03, real=0.02 secs] 
+ CMS: abort preclean due to time 2015-06-17T13:27:44.091+0800: 7.984: [CMS-concurrent-abortable-preclean: 0.247/5.077 secs] [Times: user=1.85 sys=0.11, real=5.08 secs] 
+2015-06-17T13:27:44.091+0800: 7.984: [GC[YG occupancy: 93714 K (314560 K)]2015-06-17T13:27:44.091+0800: 7.984: [GC2015-06-17T13:27:44.091+0800: 7.984: [ParNew: 93714K->798K(314560K), 0.0038100 secs] 108557K->15724K(1013632K), 0.0038670 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+2015-06-17T13:27:44.095+0800: 7.988: [Rescan (parallel) , 0.0026680 secs]2015-06-17T13:27:44.098+0800: 7.990: [weak refs processing, 0.0000220 secs]2015-06-17T13:27:44.098+0800: 7.990: [class unloading, 0.0012200 secs]2015-06-17T13:27:44.099+0800: 7.992: [scrub symbol table, 0.0015960 secs]2015-06-17T13:27:44.101+0800: 7.993: [scrub string table, 0.0001970 secs] [1 CMS-remark: 14925K(699072K)] 15724K(1013632K), 0.0101760 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+2015-06-17T13:27:44.102+0800: 7.994: [CMS-concurrent-sweep-start]
+2015-06-17T13:27:44.109+0800: 8.001: [CMS-concurrent-sweep: 0.006/0.007 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-17T13:27:44.109+0800: 8.001: [CMS-concurrent-reset-start]
+2015-06-17T13:27:44.114+0800: 8.006: [CMS-concurrent-reset: 0.005/0.005 secs] [Times: user=0.00 sys=0.01, real=0.01 secs] 
+2015-06-17T15:11:04.129+0800: 6208.022: [GC2015-06-17T15:11:04.129+0800: 6208.022: [ParNew: 280414K->564K(314560K), 0.0048950 secs] 295340K->15489K(1013632K), 0.0050320 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
+2015-06-17T16:57:49.258+0800: 12613.151: [GC2015-06-17T16:57:49.258+0800: 12613.151: [ParNew: 280180K->496K(314560K), 0.0047930 secs] 295105K->15422K(1013632K), 0.0049280 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+2015-06-17T23:46:04.246+0800: 37108.138: [GC2015-06-17T23:46:04.246+0800: 37108.138: [ParNew: 280112K->557K(314560K), 0.0023310 secs] 295038K->15483K(1013632K), 0.0023920 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-17T23:46:05.120+0800: 37109.012: [GC2015-06-17T23:46:05.120+0800: 37109.012: [ParNew: 280173K->618K(314560K), 0.0029390 secs] 295099K->15544K(1013632K), 0.0029970 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-17T23:46:05.987+0800: 37109.879: [GC2015-06-17T23:46:05.987+0800: 37109.879: [ParNew: 280234K->605K(314560K), 0.0024790 secs] 295160K->15530K(1013632K), 0.0025430 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-18T03:37:59.947+0800: 51023.840: [GC2015-06-18T03:37:59.947+0800: 51023.840: [ParNew: 280221K->543K(314560K), 0.0023140 secs] 295146K->15482K(1013632K), 0.0023740 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] 
+2015-06-18T03:38:00.766+0800: 51024.658: [GC2015-06-18T03:38:00.766+0800: 51024.658: [ParNew: 280159K->589K(314560K), 0.0023930 secs] 295098K->15558K(1013632K), 0.0024510 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-18T09:48:45.084+0800: 73268.977: [GC2015-06-18T09:48:45.084+0800: 73268.977: [ParNew: 280205K->485K(314560K), 0.0156380 secs] 295174K->15454K(1013632K), 0.0158890 secs] [Times: user=0.04 sys=0.04, real=0.02 secs] 
+2015-06-18T09:48:45.835+0800: 73269.728: [GC2015-06-18T09:48:45.835+0800: 73269.728: [ParNew: 280101K->520K(314560K), 0.0024560 secs] 295070K->15491K(1013632K), 0.0025150 secs] [Times: user=0.01 sys=0.01, real=0.00 secs] 
+2015-06-18T09:48:46.752+0800: 73270.645: [GC2015-06-18T09:48:46.752+0800: 73270.645: [ParNew: 280136K->609K(314560K), 0.0027930 secs] 295107K->15581K(1013632K), 0.0028640 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] 
+2015-06-18T10:32:04.947+0800: 75868.839: [GC2015-06-18T10:32:04.947+0800: 75868.839: [ParNew: 280225K->597K(314560K), 0.0046820 secs] 295197K->15570K(1013632K), 0.0048150 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 

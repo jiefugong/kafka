@@ -50,7 +50,6 @@ public class Consumer extends Thread
     props.put("auto.commit.interval.ms", "1000");
 
     return new ConsumerConfig(props);
-
   }
  
   public void run() {
