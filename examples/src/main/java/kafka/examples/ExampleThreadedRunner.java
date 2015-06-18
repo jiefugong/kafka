@@ -16,18 +16,23 @@
  */
 package kafka.examples;
 
-public interface KafkaProperties
-{
-  final static String zkConnect = "127.0.0.1:2181";
-  final static  String groupId = "group1";
-  final static String topic = "topic1";
-  final static String kafkaServerURL = "localhost";
-  final static int kafkaServerPort = 9092;
-  final static int kafkaProducerBufferSize = 64*1024;
-  final static int connectionTimeOut = 100000;
-  final static int reconnectInterval = 10000;
-  final static String topic2 = "topic2";
-  final static String topic3 = "topic3";
-  final static String topic4 = "topic4";
-  final static String clientId = "SimpleConsumerDemoClient";
+import kafka.consumer.ConsumerIterator;
+import kafka.consumer.KafkaStream;
+
+public class ExampleThreadedRunner implements Runnable {
+	private KafkaStream m_stream;
+	private int m_threadNumber;
+
+	public ExampleThreadedRunner(KafkaStream stream, int threadNum) {
+		m_threadNumber = threadNum;
+		m_stream = stream;
+	}
+
+	public void run() {
+		ConsumerIterator<byte[], byte[]> it = m_stream.iterator();
+		while (it.hasNext()) {
+			System.out.println("Thread " + m_threadNumber + ": " + new String(it.next().message()));
+		}
+		System.out.println("Shutting down Thread: " + m_threadNumber);
+	}
 }
